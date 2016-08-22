@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Example App</title>
+</head>
+<body>
+    
+<div class="container">
+    <h1 class="text-md-center">{{{ content }}}</h1>
+    {{#each ips}}
+    <div class="row">
+        <div class="col-md-4 offset-md-4">
+            <div class="alert alert-success text-md-center" role="alert">
+                <strong>{{host}}</strong>
+            </div>
+        </div>
+    </div>
+    {{/each}}
+</div>
+<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+</body>
+</html>
